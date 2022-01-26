@@ -1,12 +1,70 @@
-const colors = [
-    "blue",
+{
+  "layout": [
+    "axis",
+    "block",
+    "direction",
+    "fixed",
+    "flexible",
+    "float",
+    "flow",
+    "grid",
+    "line",
+    "sticky",
+    "wrap",
+    "shrink",
+    "grow",
+    "stretch"
+  ],
+  "colors": [
     "green",
-    "white",
-    "black",
-    "pink",
     "yellow",
-    "red",
-    "brown",
-    "orange",
-    "gray",
-];
+    "black",
+    "grey"
+  ],
+  "grid": [
+    "area",
+    "cell",
+    "density",
+    "explicit_implicit",
+    "fraction",
+    "gap",
+    "place",
+    "span",
+    "template",
+    "track"
+  ],
+  "symbols":[
+    [
+      "&",
+      "Ampersand"
+    ],
+    [
+      "*",
+      "Asterisc"
+    ],
+    [
+      ",",
+      "Comma"
+    ],
+    [
+      "x-x",
+      "hyphen"
+    ],
+    [
+      "x_x",
+      "Underscore"
+    ],
+    [
+      ":",
+      "Colon"
+    ],
+    [
+      ";",
+      "Semi-colon"
+    ],
+    [
+      "@",
+      "at"
+    ]
+  ]
+}
