@@ -19,7 +19,14 @@
     "green",
     "yellow",
     "black",
-    "grey"
+    "grey",
+    "red",
+    "blue",
+    "orange",
+    "pink",
+    "brown",
+    "purple",
+    "beige"
   ],
   "grid": [
     "area",
