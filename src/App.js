@@ -1,8 +1,7 @@
 import './App.css';
 import Header from "./components/Header";
-import {useState} from "react";
 import Main from "./components/Main";
-import {Routes, Outlet, Route} from "react-router-dom"
+import {Routes, Route} from "react-router-dom"
 import Flipper from "./components/Flipper";
 import NotFound from "./components/NotFound";
 
@@ -40,6 +39,12 @@ function App() {
                 id: "grid",
                 size: 1,
                 title: "Grid",
+                type: "wordPicFlip"
+            },
+            {
+                id: "spacing",
+                size: 3,
+                title: "Spacing",
                 tag: "new",
                 type: "wordPicFlip"
             }

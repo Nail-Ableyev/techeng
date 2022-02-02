@@ -40,6 +40,19 @@
     "template",
     "track"
   ],
+  "spacing": [
+    "clockwise",
+    "counterclockwise",
+    "adjacent",
+    "align",
+    "collapse",
+    "distribution",
+    "ghost",
+    "include_exclude",
+    "nest",
+    "ruler",
+    "truncate"
+  ],
   "symbols":[
     [
       "&",
