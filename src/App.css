@@ -18,7 +18,8 @@ html{
 }
 body {
     font-family: "Nunito";
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 100%)
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 30%,rgba(255,255,255,0) 100%);
+    overflow-x: hidden;
 }
 
 img{
@@ -194,5 +195,97 @@ section div {
     height: 18rem;
 }
 
+/*Button*/
+
+.my-button {
+    display: inline-block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: white;
+    color: black;
+    font-family: "Nunito";
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out,
+    transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: 0 0  10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.my-button:hover,
+.my-button:focus {
+    background: #f3f3f3;
+}
+
+.my-button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+.my-button:active {
+    transform: scale(0.99);
+}
+
+.round-button {
+    width: 5rem;
+    height: 5rem;
+    margin: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.round-button svg {
+    vertical-align:middle;
+}
+
+
+
+/*ActionPane*/
+
+.action-pane {
+    width: 6rem;
+    padding-block: 5px;
+    position: fixed;
+    bottom:0;
+    left:0
+}
+
+.tooltip {
+    visibility: hidden;
+    white-space: nowrap;
+    /*width: 120px;*/
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    left: 110%;
+    -webkit-box-shadow: 0 0  10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #f3f3f3 transparent transparent;
+}
+
+.round-button:hover .tooltip {
+    visibility: visible;
+}
 
 

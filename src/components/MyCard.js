@@ -1,6 +1,17 @@
-import React, {useState} from "react";
+import React, {useState,useContext, useEffect} from "react";
+import {Context} from "../Context"
+
 
 function MyCard ({front, back, isFlipped, background="transparent"}) {
+
+    const {isAllFlipped} = useContext(Context)
+
+    useEffect(()=>{
+            isAllFlipped ? opener():closer()
+        },
+        [isAllFlipped]
+
+    )
 
     const [isCardFlipped, setIsCardFlipped] = useState(isFlipped);
 
