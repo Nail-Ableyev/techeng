@@ -6,8 +6,10 @@ function ContextProvider({children}){
 
     const [currentPage, setCurrentPage] = useState("blah")
 
+    const [isAllFlipped, setIsAllFlipped] = useState(false)
+
     return (
-        <Context.Provider value={{currentPage,setCurrentPage}}>
+        <Context.Provider value={{currentPage,setCurrentPage,isAllFlipped,setIsAllFlipped}}>
             {children}
         </Context.Provider>
     )
